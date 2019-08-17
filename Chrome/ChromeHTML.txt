@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chrome Clone</title>
+    <link rel="stylesheet" type="text/css" href="chrome.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div id="loader"></div>
+    <div class="app" id="app">
+        <div class="option-bar">
+            <div class="two-options">
+                <div class="tabs-display">1</div>
+                <div class="option-button" onclick="showop()">
+                    <i class="fa fa-ellipsis-v"></i>
+                </div>
+            </div>
+        </div>
+        <div class="google-logo"></div>
+        <div class="search-bar">
+            <input type="text" class="search-input" name="" placeholder="Search or type web address">
+        </div>
+        <div class="fr-searches">
+            <div class="fr-search-row">
+                <div class="fr-search-item">
+                    <div class="fr-search-image">S</div>
+                    <div class="fr-search-name">SoloLearn</div>
+                </div>
+                <div class="fr-search-item">
+                    <div class="fr-search-image">P</div>
+                    <div class="fr-search-name">PUBG</div>
+                </div>
+                <div class="fr-search-item">
+                    <div class="fr-search-image">L</div>
+                    <div class="fr-search-name">Learn co...</div>
+                </div>
+                <div class="fr-search-item">
+                    <div class="fr-search-image">F</div>
+                    <div class="fr-search-name">Fortnite</div>
+                </div>
+            </div>
+            <div class="fr-search-row">
+                <div class="fr-search-item">
+                    <div class="fr-search-image">U</div>
+                    <div class="fr-search-name">Unity</div>
+                </div>
+                <div class="fr-search-item">
+                    <div class="fr-search-image">S</div>
+                    <div class="fr-search-name">Sublime...</div>
+                </div>
+                <div class="fr-search-item">
+                    <div class="fr-search-image">P</div>
+                    <div class="fr-search-name">PTron</div>
+                </div>
+                <div class="fr-search-item">
+                    <div class="fr-search-image">V</div>
+                    <div class="fr-search-name">Visual S...</div>
+                </div>
+            </div>
+        </div>
+        <div class="articles">
+            <div class="article-header-main">
+                <div class="header">Articles for you</div>
+                <div class="hide-article-button" onclick="toggleArticle()">Hide</div>
+            </div>
+            <div id="article-all">
+            <div class="article">
+                <a class="article-links" href="https://www.sololearn.com/Profile/4991698/?ref=app" target="_blank">
+                    <div class="article-content">
+                        <div class="article-header">
+                            Follow Raj Chhatrala on Sololearn for amazing content
+                        </div>
+                        <div class="article-credits">
+                            By Admin - 2 hours ago
+                        </div>
+                    </div>
+                    </a>
+                <div class="article-image"></div>
+            </div>
+           <div class="article">
+                <a class="article-links" href="https://www.sololearn.com/Profile/7038378/?ref=app" target="_blank">
+                    <div class="article-content">
+                        <div class="article-header">
+                            Arb is certified as beta tester for this code. 
+                        </div>
+                        <div class="article-credits">
+                            By Admin - 2 hours ago
+                        </div>
+                    </div>
+                    </a>
+                <div class="article-image" style="background-image: url('https://api.sololearn.com/Uploads/Avatars/7038378.jpg');"></div>
+            </div> 
+            <div class="article">
+                <a class="article-links" href="https://www.sololearn.com/Profile/2200299/?ref=app" target="_blank">
+                    <div class="article-content">
+                        <div class="article-header">
+                            Prometheus aiming for 1.5K xp every day to make his way to level 18
+                        </div>
+                        <div class="article-credits">
+                            By SoloStormers - 5 hours ago
+                        </div>
+                    </div>
+                </a>
+                <div class="article-image" style="background-image: url('https://api.sololearn.com/Uploads/Avatars/2200299.jpg');"></div>
+            </div>
+            <div class="article">
+                <a class="article-links" href="https://www.sololearn.com/Profile/14875620/?ref=app" target="_blank">
+                    <div class="article-content">
+                        <div class="article-header">
+                            Virat Kohli offcially joined sololearn and made it to platinum in just 6 days
+                        </div>
+                        <div class="article-credits">
+                            By SoloLearn - 8 hours ago
+                        </div>
+                    </div>
+                   </a>
+                <div class="article-image" style="background-image: url('https://api.sololearn.com/Uploads/Avatars/14875620.jpg');"></div>
+            </div>
+            <div class="article">
+                <a class="article-links" href="https://www.sololearn.com/Profile/9233826/?ref=app" target="_blank">
+                    <div class="article-content">
+                        <div class="article-header">
+                            Satnam singh, nikal chal nikal peli fursat me nikal.
+                        </div>
+                        <div class="article-credits">
+                            By Hindustani Bhau - 8 hours ago
+                        </div>
+                    </div>
+                </a>
+                <div class="article-image" style="background-image: url('https://api.sololearn.com/Uploads/Avatars/9233826.jpg');"></div>
+            </div>
+            <div class="article">
+                <a class="article-links" href="https://www.sololearn.com/Profile/487380/?ref=app" target="_blank">
+                    <div class="article-content">
+                        <div class="article-header">
+                            Jaydeep Khatri is found to be Munna bhaiya all this time
+                        </div>
+                        <div class="article-credits">
+                            By AmazonPrime - 14 hours ago
+                        </div>
+                    </div>
+                </a>
+                <div class="article-image" style="background-image: url('https://api.sololearn.com/Uploads/Avatars/487380.jpg');"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="options" id="options">
+        <div class="quick-options">
+            <div class="qoption"><i class="fa fa-arrow-right"></i></div>
+            <div class="qoption"><i class="fa fa-star"></i></div>
+            <div class="qoption"><i class="fa fa-download"></i></div>
+            <div class="qoption"><i class="fa fa-info-circle"></i></div>
+            <div class="qoption" onclick="cloop()"><i class="fa fa-times"></i></div>
+        </div>
+        <div class="more-options" id="ooo">
+            <div class="moption">New tab</div>
+            <div class="moption">New incognito tab</div>
+            <div class="moption">Bookmarks</div>
+            <div class="moption">Recent tabs</div>
+            <div class="moption">History</div>
+            <div class="moption">Downloads</div>
+            <div class="moption">Settings</div>
+            <div class="moption">Help & feedback</div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = function(){
+            app.style.display = "block";
+            loader.style.display = "none";
+        }
+        function showop(){
+            var s = document.getElementById('options');
+            s.style.display = "block";
+            app.style.overflow = 'hidden';
+        }
+        function cloop(){
+            var s = document.getElementById('options');
+            s.style.display = "none";
+            app.style.overflow = 'scroll';
+        }
+        var ashow = true;
+        function toggleArticle(){
+            var article = document.getElementById('article-all');
+            if (ashow){
+                article.style.display = "none";
+                ashow = false;
+            }else{
+                article.style.display = "block";
+                ashow = true;
+            }
+        }
+    </script>
+
+</body>
+</html>

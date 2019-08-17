@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+#loader{
+    height: 50vh;
+    margin-top: 25vh;
+    width: 100%;
+    /*background: #019230;*/
+    background: url("https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.app{
+    width: 100%;
+    /*height: 100vh;*/
+    position: absolute;
+    /*background-color: #f00;*/
+    /*background: url(https://images.pexels.com/photos/1154610/pexels-photo-1154610.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: scroll;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+
+.options{
+    height: 90%;
+    width: 70%;
+    margin-top: 2%;
+    background: #fff;
+    position: fixed;
+    margin-left: 28%;
+    box-shadow: 0px 0px 7px 1px rgb(60, 64, 67);
+    border-radius: 5px;
+    display: none;
+    z-index: 10000;
+}
+
+.quick-options{
+    width: 100%;
+    height: 10%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /*background: #f00;*/
+}
+
+.qoption{
+    width: 20%;
+    height: 100%;
+    /*background: #456444;*/
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.more-options{
+    height: 90%;
+    width: 100%;
+    /*background: #321847;*/
+    overflow: auto;
+}
+
+.moption{
+    width: 90%;
+    margin-left: 5%;
+    height: 50px;
+    /*background: #982734;*/
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.option-bar {
+    width: 100%;
+    height: 50px;
+    /*background: #091201;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.two-options{
+    width: 30%;
+    height: 100%;
+    /*background: #012349;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tabs-display{
+    width: 18%;
+    height: 40%;
+    background: transparent;
+    border: 3px solid rgb(60, 64, 67);
+    /*color: white;*/
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: rgb(60, 64, 67);
+}
+
+.option-button{
+    width: 15%;
+    height: 60%;
+    /*background: #0f0;*/
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(60, 64, 67);
+}
+
+.google-logo{
+    width: 80%;
+    height: 125px;
+    margin-left: 10%;
+    margin-top: 10%;
+    background: url("https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.search-bar{
+    width: 100%;
+    height: 65px;
+    margin-top: 4%;
+    /*background-color: #091209;*/
+}
+
+.search-input{
+    width: 85%;
+    height: 50%;
+    margin-left: 5%;
+    background-color: rgb(241, 243, 244);
+    border: none;
+    border-radius: 18px;
+    padding-left: 5%;
+}
+
+.search-input:focus{
+    outline: none;
+}
+
+.fr-searches{
+    width: 100%;
+    height: 180px;
+    /*background: #091209;*/
+}
+
+.fr-search-row{
+    width: 100%;
+    height: 50%;
+    /*background: #0f0;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fr-search-item{
+    width: 15%;
+    height: 100%;
+    /*background: #091209;*/
+}
+
+.fr-search-image{
+    width: 80%;
+    margin-left: 10%;
+    height: 50%;
+    background: rgb(241, 243, 244);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fr-search-name{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(60, 64, 67);
+}
+
+.articles{
+    width: 100%;
+    /*height: 500px;*/
+    /*background: #099919;*/
+}
+
+.article-header-main{
+    width: 80%;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 10%;
+    /*background-color: #092139;*/
+}
+
+.header, .hide-article-button{
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    color: rgb(100, 130, 150);
+    cursor: pointer;
+}
+
+.header{
+    justify-content: flex-start;
+}
+
+.hide-article-button{
+    justify-content: flex-end;
+}
+
+.article{
+    width: 90%;
+    height: 130px;
+    /*background: #891288;*/
+    margin-left: 5%;
+    border: 1px solid rgb(218, 220, 224);
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+.article-content{
+    width: 65%;
+    height: 100%;
+    margin-left: 5%;
+    /*background: #091234;*/
+    float: left;:;
+}
+
+.article-image{
+    width: 30%;
+    height: 100%;
+    /*background: #062344;*/
+    float: left;
+    background-image: url('https://api.sololearn.com/Uploads/Avatars/4991698.jpg'); 
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.article-header {
+    width: 100%;
+    height: 40%;
+    margin-top: 10%;
+    /*background: #0ff;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.article-credits {
+    width: 100%;
+    height: 40%;
+    /*background: #f00;*/
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.article-links{
+    color: black;
+}
